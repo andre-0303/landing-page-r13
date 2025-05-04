@@ -14,7 +14,7 @@ const propostas = [
 export default function Propostas() {
     return (
         <section id="propostas" className="bg-red-600 w-full px-6 py-12">
-            <h1 className="text-white text-center text-3xl font-bold mb-10">
+            <h1 className="text-white text-center text-3xl font-extrabold mb-10">
                 Propostas do Ronilson
             </h1>
 
@@ -22,7 +22,7 @@ export default function Propostas() {
                 {propostas.map((item, index) => (
                     <div
                         key={index}
-                        className="overflow-hidden rounded-xl shadow-lg transition-transform duration-500 hover:-translate-y-2"
+                        className="overflow-hidden rounded-xl cursor-pointer shadow-lg transition-transform duration-500 hover:-translate-y-2"
                     >
                         <Image
                             src={item.src}
