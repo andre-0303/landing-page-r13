@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Main() {
     return (
         <div className="w-full">
-            <div className="w-full h-[400px] relative">
+            <div className="w-full h-[70vh] relative">
                 <Image
                     src="/banner.jpg"
                     alt="Banner"
