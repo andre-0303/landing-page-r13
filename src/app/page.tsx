@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import  Main  from "./components/Main";
 import Propostas from "./components/Propostas";
 import Social from "./components/Social";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
      <Main/>
      <Propostas/>
      <Social/>
+     <ScrollToTopButton/>
     </>
   );
 }
