@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <>
-            <header id="inicio" className="bg-red-600 flex justify-between items-center px-6 h-[100px] w-full">
+            <header id="inicio" className="bg-red-600 flex justify-around items-center px-6 h-[100px] w-full">
                 <a href="#" className="text-white font-extrabold text-5xl">R13</a>
 
                 {/* Desktop Nav */}
