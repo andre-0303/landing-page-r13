@@ -12,12 +12,12 @@ export default function Header() {
         { label: "Início", href: "#inicio" },
         { label: "História", href: "#historia" },
         { label: "Propostas", href: "#propostas" },
-        { label: "Contatos", href: "#contatos" },
+        { label: "Contatos", href: "#social" },
     ];
 
     return (
         <>
-            <header className="bg-red-600 flex justify-around items-center px-6 h-[100px] w-full">
+            <header id="inicio" className="bg-red-600 flex justify-between items-center px-6 h-[100px] w-full">
                 <a href="#" className="text-white font-extrabold text-5xl">R13</a>
 
                 {/* Desktop Nav */}
@@ -37,6 +37,7 @@ export default function Header() {
                     </ul>
                 </nav>
 
+                {/* Mobile Icon */}
                 <button
                     onClick={toggleMenu}
                     className="text-white text-4xl md:hidden"
@@ -46,9 +47,9 @@ export default function Header() {
                 </button>
             </header>
 
-            {/* Sidebar Mobile Menu (Right Side) */}
+            {/* Sidebar Mobile Menu */}
             {menuOpen && (
-                <div className="fixed top-0 right-0 w-2/3 h-full bg-red-700 z-50 p-6 flex flex-col gap-6 transition-all duration-300 ease-in-out transform translate-x-0">
+                <div className="fixed top-0 right-0 w-2/3 h-full bg-red-700 z-50 p-6 flex flex-col gap-6 transition-all duration-300 ease-in-out">
                     <button
                         onClick={toggleMenu}
                         className="text-white text-3xl self-end"
@@ -73,7 +74,7 @@ export default function Header() {
                 </div>
             )}
 
-            {/* Content shift for mobile menu */}
+            {/* Overlay */}
             {menuOpen && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40"></div>
             )}

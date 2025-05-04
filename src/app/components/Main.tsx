@@ -15,7 +15,7 @@ export default function Main() {
                 <div className="absolute inset-0 bg-red-800/40 z-10"></div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-8">
+            <div id="historia" className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-2/3 space-y-4">
                     <h2 className="text-3xl font-bold text-red-700">Ronilson Oliveira</h2>
                     <h3 className="text-xl font-semibold text-gray-700">Para um futuro melhor, vote no R13</h3>
